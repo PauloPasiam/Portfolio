@@ -1,0 +1,347 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+        
+}
+
+body{
+    
+    min-height: 100vh;
+    background: radial-gradient( #411D7B ,#030D30 );
+    background-repeat: no-repeat;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    color: white;
+
+}
+header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    background: #121142;
+    opacity: 95%;
+    backface-visibility: 50%;
+    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1 );
+    padding: 10px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+  
+}
+
+#menu-bar{
+    display: none;
+}
+header label{
+    font-size:20px;
+    cursor: pointer;
+    display: none;
+
+}
+
+header .logo{
+    align-items: center;
+    color: white;
+}
+
+header .navbar ul{
+    list-style: none;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+
+}
+
+header .navbar ul li a{
+   font-size: 15px;
+   padding: 20px;
+   color: white;
+   display:block;
+
+}
+
+header .navbar ul li a:hover{
+    background: #26367F;
+    color: white;
+
+}
+
+.sobre{
+    padding: 200px 200px 100px 200px;
+    display: flex;
+    align-items: center; 
+    
+}
+
+.quemsou p{
+    font-size: 17px;
+}
+
+.quemsou-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+
+}
+
+.area-botao{
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.contato-botao{
+    background-color: transparent;
+    width: 400px;
+    height: 60px;
+    border-color: #1C48DA;
+    box-shadow: 4px 5px 4x rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-weight: 400;
+    font-size:medium;
+    color:white;
+}
+.contato-botao:hover{
+    background-color: #1C48DA;
+}
+.trabalhos{
+    background-color: #E9EBF2;
+    padding: 30px;
+    display: flex ;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+.trabalhos2{
+    background-color: #E9EBF2;
+    padding: 30px;
+    display: flex ;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+
+.trabalhosrecentes{
+    background-color: white;
+    padding: 100px 200px;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1 );
+    display: flex;    
+    align-items: center;
+    justify-content: space-around;
+}
+.trabalhosrecentes2{
+    background-color: white;
+    padding: 100px 200px;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1 );
+    display: flex;    
+    align-items: center;
+    justify-content: space-around;
+}
+.trabalhos-img-site1{
+    width: 480px;
+    height: 480px;
+    border-radius:5%;
+    background-size: cover;
+    background-position: center;
+    margin-right: 40px;
+    
+}
+.trabalhos-img-site2{
+    width: 480px;
+    height: 480px;
+    border-radius:5%;
+    background-size: cover;
+    background-position: center;
+    margin-left: 40px;
+    
+}
+.trabalho1{
+    display: flex;
+    align-items: initial;
+    flex-direction: column;
+    color: #030D30;
+    font-size: 17px;
+}
+.area-faq{
+    min-height: 80vh;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.area-faq h2{
+    font-weight: 300;
+    font-size: 3rem;    
+    margin: 2rem 0 rem;
+}
+.faq{
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #E9EBF2;
+    cursor: pointer;
+    font-weight: 400; 
+}
+.pergunta{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.pergunta h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+.resposta{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+.resposta p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 17px;
+    font-weight: 200;
+}
+.faq.active .resposta{
+    max-height: 300px;
+}
+
+.midias-sociais{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.midias-sociais h4{
+    font-weight: 300;
+    padding: 10px;
+ }
+.midias{
+    display: flex;
+    width:300px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: smaller;
+}
+
+.midias img{
+    max-width: 40px;
+    max-height: 40px;
+    width: auto;
+    height: auto;
+}
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: smaller;
+}
+
+
+/* Mobile / Tablet */
+
+@media(max-width:991px){
+    header{
+        padding:20px;
+    }
+
+    header label{    
+        display: initial;    
+    }
+    
+    header .navbar{
+        position: absolute;
+        top: 50px; left: 0; right: 0;
+        background: #121142;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        
+    }
+    header .navbar ul li{
+        width: 100%;
+        display: none;
+    }
+
+    #menu-bar:checked ~ .navbar ul li{
+        display: initial;
+    }
+    .sobre{
+        flex-direction: column-reverse;
+        align-items: center;
+        width: auto;
+        margin-top: 80px;
+        padding: 40px;
+        
+    }
+    .quemsou-img{
+        margin-bottom: 50px;
+    }
+   
+    .trabalhosrecentes{
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin-bottom: 20px;
+        padding: 30px;
+        
+        
+    }
+    
+    .trabalhosrecentes2{
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin-bottom: 20px;
+        padding: 30px;
+        flex-direction: column-reverse;
+        
+        
+    }
+    
+    .trabalhos-img-site1{
+        width: 85%;
+        height: 85%;
+        padding: 10px;
+        
+    }
+
+    .trabalho1{
+        max-width: 100%;
+        margin-bottom: 20px;
+        padding: 30px;
+        font-size: medium;
+        
+    }
+   
+    .trabalhos-img-site2{
+        width: 85%;
+        height: 85%;
+        padding: 10px;
+    }
+    
+
+    .rodape{
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+      
+        
+    }
+
+}
+
