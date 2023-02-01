@@ -78,10 +78,11 @@ header .navbar ul li a:hover{
     display: flex;
     align-items: flex-start;    
 }
+
 .quemsou{
     padding: 0px 50px 0px 0px;
-    
-}
+ }
+
 .quemsou p{
     font-size: 17px;
     text-align: justify;
