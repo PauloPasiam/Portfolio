@@ -76,8 +76,7 @@ header .navbar ul li a:hover{
 .sobre{
     padding: 200px 200px 100px 200px;
     display: flex;
-    align-items: flex-start;
-    
+    align-items: flex-start;    
 }
 .quemsou{
     padding: 0px 50px 0px 0px;
